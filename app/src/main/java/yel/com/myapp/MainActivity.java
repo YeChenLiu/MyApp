@@ -61,7 +61,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationBar.On
     @Override
     public void init() {
         //把布局往上拉 边界会出问题
-//        bottomNavigationBar.setFab(cFaBtn);
+//        bottomNavigationBar.setFab(cFaBtn);s
         bottomNavigationBar.setTabSelectedListener(this);
         bottomNavigationBar.setMode(BottomNavigationBar.MODE_SHIFTING);
         bottomNavigationBar
