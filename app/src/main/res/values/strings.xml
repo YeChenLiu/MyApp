@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">MyApp</string>
+    <string name="app_name">工具助手</string>
+    <string name="two_0">0000</string>
+    <string name="two_1">1111</string>
+    <string name="two_2">2222</string>
+    <string name="two_3">3333</string>
+    <string name="two_4">4444</string>
+    <string name="two_5">5555</string>
+    <string name="two_6">6666</string>
+    <string name="two_7">7777</string>
+    <string name="two_8">8888</string>
+    <string name="two_9">9999</string>
+    <string name="two_10">1010</string>
+    <string name="a">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+        mmmmmmmmmmmmmmmm
+    mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</string>
 </resources>

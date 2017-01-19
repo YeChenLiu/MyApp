@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
+    style="@style/Lmw"
+    android:orientation="vertical"
+    android:padding="@dimen/d_smallest">
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        app:banner_indicatorGravity="bottom|left"
+        app:banner_tipTextSize="@dimen/s_normal"
+        app:banner_transitionEffect="zoomStack" />
+
+    <RelativeLayout
+        android:id="@+id/rl_list"
+        style="@style/Lmw">
+
+        <ImageView
+            android:id="@+id/imgFront"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:id="@+id/rlMain"
+            style="@style/Lmw"
+            android:layout_alignBottom="@+id/imgFront"
+            android:layout_alignTop="@+id/imgFront"
+            android:layout_toRightOf="@id/imgFront">
+
+            <TextView
+                android:id="@+id/tvOne"
+                style="@style/tv_wrap_grayDark_small"
+                android:layout_marginLeft="@dimen/d_smallest"
+                android:layout_marginTop="@dimen/d_least"
+                android:ellipsize="end"
+                android:maxLines="3" />
+
+            <TextView
+                android:id="@+id/tvTwo"
+                style="@style/tv_wrap_grayDark_normal"
+                android:layout_marginLeft="@dimen/d_smallest"
+                android:layout_marginTop="@dimen/d_least"
+                android:layout_toRightOf="@id/tvOne"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/tvSummary"
+                style="@style/tv_wrap_grayDark_small"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/d_least"
+                android:layout_marginLeft="@dimen/d_smallest"
+                android:gravity="center|left"
+                android:maxLines="2" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvMain"
+            style="@style/tv_wrap_grayDark_small"
+            android:layout_alignBottom="@+id/imgFront"
+            android:layout_alignTop="@+id/imgFront"
+            android:layout_marginLeft="@dimen/d_smallest"
+            android:layout_toRightOf="@id/imgFront"
+            android:ellipsize="end"
+            android:maxLines="4" />
+    </RelativeLayout>
+</LinearLayout>
